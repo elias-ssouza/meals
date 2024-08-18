@@ -1,7 +1,7 @@
 # Meals
 
 ### Descrição
-O Receitas Diversas é um aplicativo desenvolvido em Flutter que permite aos usuários explorar, salvar e compartilhar receitas de diferentes categorias, como sobremesas, pratos principais, saladas, entre outros. O objetivo principal do app é proporcionar uma experiência intuitiva e prática para encontrar e preparar refeições deliciosas.
+O 'Vamos Cozinhar?' é um aplicativo desenvolvido em Flutter que permite aos usuários explorar e favoritar receitas de diferentes categorias. O objetivo principal do app é proporcionar uma experiência intuitiva e prática para encontrar e preparar refeições deliciosas.
 
 ### Funcionalidades
 Exploração de Receitas: Navegue por uma vasta seleção de receitas organizadas por categorias.
