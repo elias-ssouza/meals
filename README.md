@@ -1,16 +1,9 @@
-# meals
+# Meals
 
-A new Flutter project.
+### Descrição
+O Receitas Diversas é um aplicativo desenvolvido em Flutter que permite aos usuários explorar, salvar e compartilhar receitas de diferentes categorias, como sobremesas, pratos principais, saladas, entre outros. O objetivo principal do app é proporcionar uma experiência intuitiva e prática para encontrar e preparar refeições deliciosas.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Funcionalidades
+Exploração de Receitas: Navegue por uma vasta seleção de receitas organizadas por categorias.
+Favoritos: Salve suas receitas preferidas para acesso rápido.
+Passo a Passo: Visualize as receitas em um formato de passo a passo fácil de seguir.
