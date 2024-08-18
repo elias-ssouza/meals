@@ -5,5 +5,7 @@ O Receitas Diversas é um aplicativo desenvolvido em Flutter que permite aos usu
 
 # Funcionalidades
 Exploração de Receitas: Navegue por uma vasta seleção de receitas organizadas por categorias.
+
 Favoritos: Salve suas receitas preferidas para acesso rápido.
+
 Passo a Passo: Visualize as receitas em um formato de passo a passo fácil de seguir.
