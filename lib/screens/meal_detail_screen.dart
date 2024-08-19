@@ -37,7 +37,9 @@ class MealDetailScreen extends StatelessWidget {
     final meal = ModalRoute.of(context)?.settings.arguments as Meal;
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
         title: Text(meal.title),
       ),
       body: SingleChildScrollView(

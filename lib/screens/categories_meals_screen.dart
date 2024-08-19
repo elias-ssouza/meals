@@ -15,7 +15,9 @@ class CategoriesMealsScreen extends StatelessWidget {
     }).toList();
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
         title: Text(category.title),
       ),
       body: ListView.builder(
