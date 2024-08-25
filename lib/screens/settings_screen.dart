@@ -3,16 +3,24 @@ import '../components/main_drawer.dart';
 import '../models/settings.dart';
 
 class SettingsScreen extends StatefulWidget {
+  final Settings settings;
   final Function(Settings) onSettingsChanged;
 
-  const SettingsScreen(this.onSettingsChanged, {Key? key}) : super(key: key);
+  const SettingsScreen(this.settings, this.onSettingsChanged, {Key? key})
+      : super(key: key);
 
   @override
   State<SettingsScreen> createState() => _SettingsScreenState();
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  var settings = Settings(isGlutenFree: false, isLactoseFree: false, isVegan: false, isVegetarian: false);
+  Settings? settings;
+
+  @override
+  void initState() {
+    super.initState();
+    settings = widget.settings;
+  }
 
   Widget _createSwitch(
     String title,
@@ -26,7 +34,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       value: value,
       onChanged: (value) {
         onChanged(value);
-        widget.onSettingsChanged(settings);
+        widget.onSettingsChanged(settings!);
       },
     );
   }
@@ -34,6 +42,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text('Configurações'),
       ),
@@ -51,28 +60,28 @@ class _SettingsScreenState extends State<SettingsScreen> {
             child: ListView(
               children: [
                 _createSwitch(
-                  'Sem Glutén',
+                  'Sem Glúten',
                   'Só exibe refeições sem glúten!',
-                  settings.isGlutenFree,
-                  (value) => setState(() => settings.isGlutenFree = value),
+                  settings!.isGlutenFree,
+                  (value) => setState(() => settings!.isGlutenFree = value),
                 ),
                 _createSwitch(
                   'Sem Lactose',
                   'Só exibe refeições sem lactose!',
-                  settings.isLactoseFree,
-                  (value) => setState(() => settings.isLactoseFree = value),
+                  settings!.isLactoseFree,
+                  (value) => setState(() => settings!.isLactoseFree = value),
                 ),
                 _createSwitch(
                   'Vegana',
                   'Só exibe refeições veganas!',
-                  settings.isVegan,
-                  (value) => setState(() => settings.isVegan = value),
+                  settings!.isVegan,
+                  (value) => setState(() => settings!.isVegan = value),
                 ),
                 _createSwitch(
                   'Vegetariana',
                   'Só exibe refeições vegetarianas!',
-                  settings.isVegetarian,
-                  (value) => setState(() => settings.isVegetarian = value),
+                  settings!.isVegetarian,
+                  (value) => setState(() => settings!.isVegetarian = value),
                 ),
               ],
             ),
@@ -82,3 +91,4 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 }
+
